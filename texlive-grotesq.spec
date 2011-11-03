@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/urw/grotesq
+# catalog-date 2007-11-03 13:04:21 +0100
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-grotesq
 Version:	20071103
 Release:	1
@@ -66,6 +72,7 @@ for use with (La)TeX.
 %{_texmfdistdir}/tex/latex/grotesq/ts1ugq.fd
 %doc %{_texmfdistdir}/doc/fonts/grotesq/grotesq.txt
 %doc %{_texmfdistdir}/doc/fonts/grotesq/readme.grotesq
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -76,3 +83,5 @@ for use with (La)TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
