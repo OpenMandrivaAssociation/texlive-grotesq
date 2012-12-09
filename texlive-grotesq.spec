@@ -73,3 +73,17 @@ for use with (La)TeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20071103-2
++ Revision: 752449
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20071103-1
++ Revision: 718587
+- texlive-grotesq
+- texlive-grotesq
+- texlive-grotesq
+- texlive-grotesq
+
