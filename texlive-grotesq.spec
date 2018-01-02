@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/urw/grotesq
-# catalog-date 2007-11-03 13:04:21 +0100
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-grotesq
-Version:	20071103
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	URW Grotesq font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/grotesq
@@ -33,36 +27,13 @@ for use with (La)TeX.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/grotesq/config.ugq
-%{_texmfdistdir}/fonts/afm/urw/grotesq/ugqb8a.afm
-%{_texmfdistdir}/fonts/map/dvips/grotesq/ugq.map
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb7t.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb8a.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb8c.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb8r.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqb8t.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbc7t.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbc8t.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbo7t.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbo8c.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbo8r.tfm
-%{_texmfdistdir}/fonts/tfm/urw/grotesq/ugqbo8t.tfm
-%{_texmfdistdir}/fonts/type1/urw/grotesq/ugqb8a.pfb
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqb.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqb7t.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqb8c.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqb8t.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqbc7t.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqbc8t.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqbo7t.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqbo8c.vf
-%{_texmfdistdir}/fonts/vf/urw/grotesq/ugqbo8t.vf
-%{_texmfdistdir}/tex/latex/grotesq/ot1ugq.fd
-%{_texmfdistdir}/tex/latex/grotesq/t1ugq.fd
-%{_texmfdistdir}/tex/latex/grotesq/ts1ugq.fd
-%doc %{_texmfdistdir}/doc/fonts/grotesq/grotesq.txt
-%doc %{_texmfdistdir}/doc/fonts/grotesq/readme.grotesq
+%{_texmfdistdir}/fonts/afm/urw/grotesq
+%{_texmfdistdir}/fonts/map/dvips/grotesq
+%{_texmfdistdir}/fonts/tfm/urw/grotesq
+%{_texmfdistdir}/fonts/type1/urw/grotesq
+%{_texmfdistdir}/fonts/vf/urw/grotesq
+%{_texmfdistdir}/tex/latex/grotesq
+%doc %{_texmfdistdir}/doc/fonts/grotesq
 
 #-----------------------------------------------------------------------
 %prep
@@ -72,18 +43,4 @@ for use with (La)TeX.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20071103-2
-+ Revision: 752449
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20071103-1
-+ Revision: 718587
-- texlive-grotesq
-- texlive-grotesq
-- texlive-grotesq
-- texlive-grotesq
-
+cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
