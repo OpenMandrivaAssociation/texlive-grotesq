@@ -1,12 +1,12 @@
 Name:		texlive-grotesq
-Version:	20190228
+Version:	35859
 Release:	1
 Summary:	URW Grotesq font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/grotesq
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ The directory contains a copy of the Type 1 font "URW Grotesq
 for use with (La)TeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -37,7 +37,7 @@ for use with (La)TeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
