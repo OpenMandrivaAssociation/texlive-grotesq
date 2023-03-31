@@ -1,6 +1,6 @@
 Name:		texlive-grotesq
 Version:	35859
-Release:	1
+Release:	2
 Summary:	URW Grotesq font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/grotesq
