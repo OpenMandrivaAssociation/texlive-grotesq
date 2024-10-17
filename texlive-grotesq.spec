@@ -3,7 +3,7 @@ Version:	35859
 Release:	2
 Summary:	URW Grotesq font pack for LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/urw/grotesq
+URL:		https://www.ctan.org/tex-archive/fonts/urw/grotesq
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/grotesq.doc.r%{version}.tar.xz
